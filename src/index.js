@@ -8,6 +8,10 @@ const app = express();
 // Connect to the database
 connectDB();
 
+// app use cors
+app.use(cors());
+
+
 // Middleware to parse JSON
 app.use(express.json());
 
